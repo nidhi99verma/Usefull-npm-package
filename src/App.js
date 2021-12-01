@@ -1,23 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+import ReactIdleTimer from './page/ReactIdleTimer';
+// import ReactIcon from './page/ReactIcon';
+// import ReactToastify from './page/ReactToastify';
+// import ReactModal from './page/ReactModal';
+import Modal from 'react-modal';
+// import ToolTip from './page/ToolTip';
+// import ReactCountUp from './page/ReactCountUp';
+
+Modal.setAppElement('#root');
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* react-icon package */}
+      {/* https://react-icons.github.io/react-icons */}
+      {/* <ReactIcon/> */}
+
+      {/* react-icon package */}
+      {/* https://www.npmjs.com/package/react-toastify */}
+      {/* <ReactToastify/> */}
+
+      {/* react-modal package */}
+      {/* https://www.npmjs.com/package/react-modal*/}
+      {/* http://reactcommunity.org/react-modal/*/}
+      {/* <ReactModal /> */}
+
+      {/* tippy.js package */}
+      {/* https://www.npmjs.com/package/tippy.js */}
+      {/* https://atomiks.github.io/tippyjs/ */}
+      {/* <ToolTip/> */}
+
+      {/* React-CountUp package */}
+      {/* https://www.npmjs.com/package/react-countup */}
+      {/* https://react-countup.vercel.app/ */}
+      {/* <ReactCountUp/> */}
+
+      {/* idle-timer package */}
+      {/* https://www.npmjs.com/package/idle-timer */}
+      <ReactIdleTimer/>
+
     </div>
   );
 }
